@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "@/axios";
 import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
@@ -22,7 +22,7 @@ export default {
   methods: {
     async fetch() {
       try {
-        const url = "http://localhost:5000/api/HelloWorld";
+        const url = "/HelloWorld";
         const response = await axios.get(url);
         const data = response.data;
 
